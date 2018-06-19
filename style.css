@@ -1,3 +1,23 @@
 body {
-	background-color: lavender;
+	background-color: #49a8c7;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2, p, li {
+	margin: 10px;
+}
+
+#titleDiv, #definitions, #resources {
+	background-color: white;
+	border: solid black 2px;
+	border-radius: 2px;
+	width: 75%;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#titleText {
+	font-size: 25px;
+	text-align: center;
 }

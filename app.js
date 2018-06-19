@@ -34,8 +34,9 @@ class Person {
 	}
 }
 
-// Instantiate the class
+// Instantiate the class (this is where we create an object based on the class)
 
+// marie is now an instance of the Person class
 const marie = new Person('Marie', 'Brown', 'Brown');
 console.log(marie);
 
@@ -43,3 +44,23 @@ console.log(marie);
 
 marie.eat();
 marie.sleep();
+
+
+// INHERITANCES --> this occurs when we grab all of the properties and methods from one class with the intention of allowing another class to use them. 
+
+
+// extends Person tells us to reference the Person class
+class Athlete extends Person {
+	constructor (name, eyeColor, hairColor, sportsPlayed){
+		// super allows us to reference the Person class's constructor.
+		super (name, eyeColor, hairColor);
+		// Add new properties that are unique to the Athlete class
+		this.athlete = true;
+		this.sportsPlayed = sportsPlayed
+	}
+}
+
+// Instantiate the class (again, this is where we create an object based on the class)
+
+const soccerMarie = new Athlete ('Marie', 'Brown', 'Brown', 'Soccer');
+console.log(soccerMarie);

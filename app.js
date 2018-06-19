@@ -58,9 +58,23 @@ class Athlete extends Person {
 		this.athlete = true;
 		this.sportsPlayed = sportsPlayed
 	}
+	// Add a method on to the Athlete class
+	playSports (){
+		console.log(this.name + " plays " + this.sportsPlayed + ".")
+	}
+	halfTime (){
+		console.log("It's halftime! Grab your orange wedges and Capri Sun.")
+	}
 }
 
 // Instantiate the class (again, this is where we create an object based on the class)
 
 const soccerMarie = new Athlete ('Marie', 'Brown', 'Brown', 'Soccer');
 console.log(soccerMarie);
+
+// Have soccerMarie interact with the methods associated with the class. 
+
+soccerMarie.playSports();
+soccerMarie.halfTime();
+
+

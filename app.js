@@ -25,9 +25,21 @@ class Person {
 		this.eyeColor = eyeColor;
 		this.hairColor = hairColor;
 	}
+	// Classes can also have methods
+	eat () {
+		console.log(this.name + " is eating.")
+	}
+	sleep () {
+		console.log(this.name + " is now sleeping.")
+	}
 }
 
 // Instantiate the class
 
 const marie = new Person('Marie', 'Brown', 'Brown');
 console.log(marie);
+
+// Have marie interact with methods associated with the class
+
+marie.eat();
+marie.sleep();

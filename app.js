@@ -21,8 +21,13 @@ class Person {
 		this.arms = 2;
 		this.legs = 2;
 		// Properties associated with input parameters
-		this.eyes = eyes;
-		this.hair = hair;
 		this.name = name;
+		this.eyeColor = eyeColor;
+		this.hairColor = hairColor;
 	}
 }
+
+// Instantiate the class
+
+const marie = new Person('Marie', 'Brown', 'Brown');
+console.log(marie);
